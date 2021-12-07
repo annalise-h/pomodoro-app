@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html,body {
+  height: 100%;
+  margin: auto 0;
+  font-family: "Roboto";
+}
+
+#pomodoroCounterDisplay {
+  font-size: 24px;
+}
+
+#pomodoro-app.coolDown {
+  background: #d8e2dc;
+}
+
+#pomodoro-app.focus {
+  background: #ffd7ba;
+}
+
+section#pomodoro-app {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 100%;
+  background-color: #f8edeb;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+h1#counterHeader,
+h3#counterDisplay,
+div.inputs {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+form.pomorodoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.timeBlock > input {
+  border: none;
+  height: 3rem;
+  width: 2rem;
+  margin: 0px;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.timeBlock > input:focus {
+  outline: none;
+}
+
+.timeBlock {
+  background-color: white;
+  border-radius: 3px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1#counterHeader,
+h3#counterDisplay {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+
+span#pomodoroErrorList {
+  max-height: 4rem;
+  color: #ef476f;
+  font-weight: 700;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button {
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #118ab2;
+  color: white;
+  padding: 0.5rem;
+  margin: 0px 0.25rem;
+  width: auto;
+}
+
+input#minuteInput {
+  min-height: 1.57rem;
+}
